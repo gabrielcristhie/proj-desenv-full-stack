@@ -25,4 +25,5 @@ public abstract class Cliente {
     @Column(name = "ativo")
     private Boolean ativo;
 
+    public abstract String getTelefoneFormatado();
 }

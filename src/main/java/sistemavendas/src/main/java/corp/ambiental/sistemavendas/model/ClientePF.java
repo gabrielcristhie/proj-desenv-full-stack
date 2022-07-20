@@ -26,4 +26,9 @@ public class ClientePF extends Cliente{
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "clientePF", orphanRemoval = true)
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Pedido> pedidos = new HashSet<>();
+
+    @Override
+    public String getTelefoneFormatado() {
+        return null;
+    }
 }
